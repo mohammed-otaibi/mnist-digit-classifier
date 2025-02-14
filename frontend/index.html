@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصنيف الأرقام اليدوية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <h3>📊 نماذج من الأرقام في مجموعة بيانات EMNIST</h3>
+        <img src="images/digits_samples.png" alt="EMNIST Digits Samples" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+    </div>
+    
+    <h1>🖌️ ارسم رقمًا وسيتم تصنيفه باستخدام الذكاء الاصطناعي</h1>
+    <canvas id="drawingCanvas" width="280" height="280"></canvas>
+    <div>
+        <button id="clearBtn">🧹 مسح</button>
+        <button id="predictBtn">🔍 تصنيف الرقم</button>
+    </div>
+    <p id="result">التوقع: ...</p>
+    <div style="text-align: center; margin-top: 20px; background-color: #f8d7da; color: #721c24; padding: 15px; border-radius: 8px; border: 1px solid #f5c6cb;">
+        <h3>⚠️ ملاحظة هامة حول دقة النموذج</h3>
+        <p style="font-size: 16px; max-width: 600px; margin: auto;">
+            قد يواجه النموذج صعوبة في تصنيف بعض الأرقام المكتوبة بخط اليد بسبب اختلاف أنماط الكتابة بين المستخدمين 
+            والتدريب المحدود على أشكال متنوعة. بالإضافة إلى ذلك، قد تؤثر جودة الصورة، وحجم الخط، وموقع الرقم داخل المربع على دقة التوقعات.
+            جرب كتابة الرقم بشكل واضح ومتوسط الحجم لضمان نتائج أفضل! 😊
+        </p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
